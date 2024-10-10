@@ -1,0 +1,21 @@
+{
+  "fallback": {
+    "not-found": "Not found"
+  },
+  "button": {
+    "back": "Back",
+    "go": "GO"
+  },
+  "page": {
+    "home": "Home",
+    "welcome": "Welcome",
+    "fallback": "404"
+  },
+  "demo": {
+    "introduce": "Opinionated Vite Starter Template",
+    "whats-your-name": "What's your name?",
+    "hi": "Hi, {name}!",
+    "aka": "Also known as",
+    "dynamic-route": "Demo of dynamic route"
+  }
+}

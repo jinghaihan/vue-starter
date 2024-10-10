@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vue-starter</title>
+    <script>
+      ;(function () {
+        try {
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+          const preferences = localStorage.getItem('preferences') || ''
+          const { colorMode } = JSON.parse(preferences)
+          if (colorMode === 'dark' || (prefersDark && colorMode !== 'light'))
+            document.documentElement.classList.toggle('dark', true)
+        } catch { }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <noscript> This website requires JavaScript to function properly. Please enable JavaScript to continue. </noscript>
+  </body>
+</html>
